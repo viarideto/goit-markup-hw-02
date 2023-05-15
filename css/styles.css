@@ -79,9 +79,11 @@ background-color: var(--main-background-color);
     color: var(--link-color-active);
 }
 
+.top-address {
+    font-style: normal;
+}
 .top-address-link {
     font-family: 'Roboto';
-    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--link-contacts-color);
