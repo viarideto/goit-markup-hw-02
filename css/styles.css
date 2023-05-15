@@ -78,7 +78,7 @@ background-color: var(--main-background-color);
 }
     
 .top-link:hover, .top-link:focus  {
-    color: var(--link-color-active);
+    color: #4D5AE5;
 }
 
 .top-address {
@@ -95,7 +95,7 @@ background-color: var(--main-background-color);
     }
 
 .top-address-link:hover, .top-address-link:focus {
-    color: var(--link-color-active);
+    color: #404BBF;
 }
 
 
