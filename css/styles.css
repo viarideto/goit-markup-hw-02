@@ -19,12 +19,14 @@
     --filter-btn-hover: #FFFFFF;
 
     /* background */
+    --main-background-color: #FFFFFF;
     --header-background-color: #ffffff;
     --hero-background-color: #2E2F42;
-    --main-background-color: #FFFFFF;
+    --footer-background-color: #2E2F42;
+
     --modal-background: #FCFCFC;
     --team-card-background: #ffffff;
-    --footer-background-color: #2E2F42;
+    
     --filter-btn-background-color: #E7E9FC;
     --filter-btn-background-hover: #404BBF;
 }
@@ -32,6 +34,8 @@
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
+color: #434455;
+background-color: var(--main-background-color);
 }
 
 .list {
@@ -73,10 +77,13 @@ font-size: 16px;
     color: var(--link-color);
 }
     
-.top-link:active {
+.top-link:hover, .top-link:focus  {
     color: var(--link-color-active);
 }
 
+.top-address {
+    font-style: normal;
+}
 .top-address-link {
     font-family: 'Roboto';
     font-style: normal;
@@ -87,7 +94,7 @@ font-size: 16px;
     color: var(--link-contacts-color);
     }
 
-.top-address-link:active {
+.top-address-link:hover, .top-address-link:focus {
     color: var(--link-color-active);
 }
 
@@ -108,16 +115,15 @@ font-size: 16px;
 .hero-button {
     font-family: inherit;
     font-weight: 500;
-    /* font-size: 16px; */
+    font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: var(--hero-btn-text-color);
     background-color: var(--hero-btn-background-color);
+    cursor: pointer;
 }
 
-.hero-button:hover {
+.hero-button:hover .hero-button:focus {
     background-color: var(--hero-btn-background-hover);
 }
 /* -----------------MAIN---------------- */
@@ -150,7 +156,7 @@ font-size: 16px;
 
 /* ----Team---- */
 .team {
-    background-color: var(--modal-background);
+    background-color: #F4F4FD;
 }
 .team-item {
     background-color:var(--team-card-background);
@@ -193,7 +199,7 @@ font-size: 16px;
         color: var(--text-footer-color);
 }
 .bottom-logo {
-font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -221,11 +227,12 @@ font-family: 'Raleway';
     letter-spacing: 0.04em;
     color: var(--filter-btn-color);
     background-color: var(--filter-btn-background-color);
+    cursor: pointer;
 }
-.portfolio-filter-button:hover, .filter-button:focus {
+.portfolio-filter-button:hover, .portfolio-filter-button:focus {
     color: var(--filter-btn-hover);
     background-color: var(--filter-btn-background-hover);
-    cursor: pointer;
+    
 }
  
 /* -----------------PORTFOLIO-MAIN---------------- */
