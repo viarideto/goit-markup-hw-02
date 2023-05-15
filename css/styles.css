@@ -78,7 +78,7 @@ background-color: var(--main-background-color);
 }
     
 .top-link:hover, .top-link:focus  {
-    color: #4D5AE5;
+    color: var(--link-color-active);
 }
 
 .top-address {
@@ -95,7 +95,7 @@ background-color: var(--main-background-color);
     }
 
 .top-address-link:hover, .top-address-link:focus {
-    color: #404BBF;
+    color: var(--link-color-active);
 }
 
 
@@ -123,7 +123,7 @@ background-color: var(--main-background-color);
     cursor: pointer;
 }
 
-.hero-button:hover .hero-button:focus {
+.hero-button:hover, .hero-button:focus {
     background-color: var(--hero-btn-background-hover);
 }
 /* -----------------MAIN---------------- */
